@@ -8,16 +8,16 @@ import Contact from './components/Contact';
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="App">
-        <BrowserRouter>
-          <Navbar/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='projects' element={<Projects/>}/>
-            <Route path='contact' element={<Contact/>}/>
-          </Routes>
-        </BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='projects' element={<Projects/>}/>
+          <Route path='contact' element={<Contact/>}/>
+        </Routes>
       </div>
+    </BrowserRouter>
   )
 }
 

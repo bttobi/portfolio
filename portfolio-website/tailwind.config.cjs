@@ -7,9 +7,10 @@ module.exports = {
       colors: 
       {
         'bg-primary': '#74bde0',
+        'blue-dark': '#3282B8'
       },
     },
   },
   
-  plugins: [require('daisyui')],
+  plugins: [require("daisyui")],
 }
