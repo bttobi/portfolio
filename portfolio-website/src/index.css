@@ -9,6 +9,7 @@
   margin: 0;
   font-family: 'Red Hat Display', sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .App{
