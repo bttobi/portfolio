@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div id="projects">Projects</div>
+    <div id="projects" style={{height: "100vh", width: "100%"}}>Projects</div>
   )
 }
 
