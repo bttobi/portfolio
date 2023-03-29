@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
   return (
-    <div className="mockup-code mt-12 text-white text-2xl flex flex-col w-1/2 mr-8 ml-16">
+    <div className="mockup-code mt-12 text-white text-2xl flex flex-col w-1/2 mr-8 ml-16 shadow-lg shadow-black">
       <div className="avatar w-full align-center justify-center">
         <div className="w-44 h-44 mt-4 rounded-full ring ring-blue-dark backdrop-blur ring-offset-base-100 ring-offset-2">
           <img className="blur-0" src="./photo.jpg" alt="profile picture" />
