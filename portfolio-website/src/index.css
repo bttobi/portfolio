@@ -7,6 +7,7 @@
   width: 100%;
   height: 310vh;
   margin: none;
+  padding: none;
   font-family: 'Red Hat Display', sans-serif;
   color: white;
   scroll-behavior: smooth;
@@ -17,13 +18,55 @@
   height: 310vh;
   margin: none;
   background-color: black;
-  background-image: url(/background2.svg);
+  background-image: url(/bg.svg);
+  background-repeat: repeat-x;
   background-size: cover;
+  animation: toggle 80s infinite linear;
+}
+
+@keyframes toggle{
+  from {
+    background-position: 0%;
+  }
+  
+  to {
+    background-position: 300%;
+  }
+}
+
+.projects-link, .name-and-surname, .contacts-link{
+  transition: all 100ms ease-in-out;
+}
+
+.projects-link:hover, .name-and-surname:hover, .contacts-link:hover{
+  background-color: #4444444f;
+}
+
+.logo{
+  transition: all 100ms ease-in-out;
+}
+
+.logo:hover{
+  transform: rotate(20deg);
+}
+
+.in-view{
+  animation: inView 60s infinite linear;
+}
+
+@keyframes inView{
+  from{
+    background-color: currentColor;
+  }
+
+  to{
+    background-color: #4444444f;
+  }
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
