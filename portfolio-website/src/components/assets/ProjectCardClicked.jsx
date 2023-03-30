@@ -6,17 +6,37 @@ const ProjectCardClicked = ({projectNumber, projectPhotoUrl, projectDesc, projec
     <>
       <input type="checkbox" className="modal-toggle" id={projectNumber} />
       <label htmlFor={projectNumber} className="modal cursor-pointer">
-        <label htmlFor="" className="modal-box" style={{backgroundColor: "#222831"}}>
+        <label htmlFor="" className="modal-box h-min bg-gradient-to-r from-cyan-600 to-cyan-400" style={{backgroundColor: "#222831"}}>
           <label htmlFor={projectNumber} className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "><AiOutlineCloseCircle /></label>
-          <h3 className="font-bold text-lg">Cat Page</h3>
-          <p className="py-4">Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!</p>
-          <ul className="mt-4 px-4 flex flex-row">
-            <li className="mt-2"><img width="64" alt="React.js" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"/></li>
-            <li className="mt-2"><img width="64" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" /></li>
-            <li className="mt-2"><img width="64" src="https://vectorwiki.com/images/Skj0l__react-query-icon.svg" alt="React Query" /></li>
-            <li className="mt-2"><img src="" alt="Tailwind CSS" /></li>
-            <li className="mt-2"><img src="" alt="DaisyUI" /></li>
-            <li className="mt-2"><img src="" alt="React Router" /></li>
+          <p className="font-bold text-xl text-center">Cat Page</p>
+          <p className="py-4 text-center">Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!</p>
+          <ul className="mt-4 flex flex-row align-center items-baseline justify-around">
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="48" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="React.js" />
+              <span className="mt-2">React.js</span>
+            </li>
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="48" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" />
+              <span className="mt-2">Firebase</span>
+            </li>
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="48" src="https://vectorwiki.com/images/Skj0l__react-query-icon.svg" alt="React Query" />
+              <span className="mt-2">React Query</span>
+            </li>
+          </ul>
+          <ul className="mt-4 flex flex-row align-center items-baseline justify-around">
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="48" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333" alt="Tailwind CSS" />
+              <span className="mt-2">Tailwind CSS</span>
+            </li>
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="72" src="https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg" alt="DaisyUI" />
+              <span className="mt-2">daisyUI</span>
+            </li>
+            <li className="mt-2 flex flex-col items-center w-1/3">
+              <img width="48" src="/react-router.svg" alt="React Router" />
+              <span className="mt-2">React Router</span>
+            </li>
           </ul>
           <div className="button-wrapper flex align-center items-center justify-around">
             <a href="#demo" className="modal-action btn w-min">
