@@ -6,7 +6,7 @@ import HelloText from './HelloText';
 const HelloScene = () => {
   return (
   <Suspense fallback={null}>
-    <Canvas className="mr-16 ml-8" style={{width: "50%", height: "100%"}}>
+    <Canvas className="flex" style={{width: "50%", height: "100vh"}}>
       <ambientLight intensity={0.5}/>
       <pointLight intensity={2} position={[10,0,10]} />
       <OrbitControls enableZoom={false}/>
