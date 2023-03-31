@@ -6,7 +6,7 @@ const ProjectCardClicked = ({projectNumber, projectPhotoUrl, projectDesc, projec
     <>
       <input type="checkbox" className="modal-toggle" id={projectNumber} />
       <label htmlFor={projectNumber} className="modal cursor-pointer">
-        <label htmlFor="" className="modal-box h-min bg-gradient-to-r from-cyan-600 to-cyan-400" style={{backgroundColor: "#222831"}}>
+        <label htmlFor="" className="modal-box h-min bg-gradient-to-r from-cyan-600 to-cyan-400">
           <label htmlFor={projectNumber} className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "><AiOutlineCloseCircle /></label>
           <p className="font-bold text-xl text-center">Cat Page</p>
           <p className="py-4 text-center">Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!</p>
@@ -39,10 +39,10 @@ const ProjectCardClicked = ({projectNumber, projectPhotoUrl, projectDesc, projec
             </li>
           </ul>
           <div className="button-wrapper flex align-center items-center justify-around">
-            <a href="#demo" className="modal-action btn w-min">
+            <a href="#demo" className="modal-action btn w-min text-white" style={{backgroundColor: "#1b262c"}}>
               Demo
             </a>
-            <a href="#github" className="modal-action btn w-min">
+            <a href="#github" className="modal-action btn w-min text-white" style={{backgroundColor: "#1b262c"}}>
               Github
             </a>
           </div>
