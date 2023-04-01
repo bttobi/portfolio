@@ -12,6 +12,7 @@ const Navbar = () => {
       <div className="navlinks-wrapper h-full flex flex-row w-full justify-around">
         <a href="#projects" className="nav-button projects-link p-1 rounded-lg">PROJECTS</a>
         <a href="#contact" className="nav-button contacts-link p-1 rounded-lg">CONTACT</a>
+        <a href="logo.png" download className="nav-button contacts-link p-1 rounded-lg">RESUME</a>
       </div>
     </nav>
   )
