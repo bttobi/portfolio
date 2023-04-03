@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import {motion, AnimatePresence} from 'framer-motion';
 
 const Navbar = () => {
   const hamburgerRef = useRef();
@@ -20,13 +21,17 @@ const Navbar = () => {
         <a href="logo.png" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block">RESUME</a>
       </div>
       <input ref={hamburgerRef} onChange={changeVisibility} type="checkbox" className="hamburger-btn btn btn-ghost mr-4 hamburger-menu lg:hidden flex justify-end items-end" />
-      {hamburgerIsActive &&
-      <ul className="hamburger-menu text-lg absolute right-0 p-2 mt-64 shadow rounded-box w-48 flex flex-col text-center" style={{backgroundColor: "#222831"}}>
-        <li className="p-2 rounded-lg bg-slate-600 w-full mb-2"><a href="#home">About</a></li>
-        <li className="p-2 rounded-lg bg-slate-600 w-full mb-2"><a href="#projects">Projects</a></li>
-        <li className="p-2 rounded-lg bg-slate-600 w-full mb-2"><a href="#contact">Contact</a></li>
-        <li className="p-2 rounded-lg bg-slate-600 w-full"><a href="logo.png">Resume</a></li>
-      </ul>}
+      <AnimatePresence>
+        {hamburgerIsActive &&
+        <motion.div initial={{transform: "scale(0)", opacity: 0}} animate={{transform: "scale(1)", opacity: 1}} exit={{transform: "scale(0)", opacity: 0}}>
+          <ul className="hamburger-menu text-lg absolute right-0 p-2 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center" style={{backgroundColor: "#222831"}}>
+            <li className="p-1 rounded-lg bg-slate-600 w-40 mb-2"><a href="#home">About</a></li>
+            <li className="p-1 rounded-lg bg-slate-600 w-40 mb-2"><a href="#projects">Projects</a></li>
+            <li className="p-1 rounded-lg bg-slate-600 w-40 mb-2"><a href="#contact">Contact</a></li>
+            <li className="p-1 rounded-lg bg-slate-600 w-40"><a href="logo.png">Resume</a></li>
+          </ul>
+        </motion.div>}
+      </AnimatePresence>
     </nav>
   )
 }
