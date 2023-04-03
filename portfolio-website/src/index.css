@@ -5,7 +5,7 @@
 
 :root, html, body, #root {
   width: 100%;
-  height: 310vh;
+  height: 300vh;
   margin: none;
   padding: none;
   font-family: 'Red Hat Display', sans-serif;
@@ -15,7 +15,7 @@
 
 .App{
   width: 100%;
-  height: 310vh;
+  height: 300vh;
   margin: none;
   background-color: black;
   background-image: url(/bg.svg);
@@ -101,4 +101,8 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.hamburger-btn {
+  
 }
