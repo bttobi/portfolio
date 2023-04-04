@@ -3,7 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root, html, body, #root {
+:root {
+  --bar-width: 30px;
+  --bar-height: 6px;
+  --hamburger-gap: 6px; /*square root of 2*/ 
+}
+
+html, body, #root {
   width: 100%;
   height: 300vh;
   margin: none;
@@ -103,10 +109,61 @@
   background: #555;
 }
 
-.hamburger-menu {
-  
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 
-.hamburger-menu:hover {
-  
+.menu-item {
+  transition: all 100ms ease-in-out;
+}
+
+.menu-item:hover {
+  background-color: rgb(97, 116, 142);
+}
+
+.menu-item:active {
+  transform: scale(0.92);
+  background-color: #3282b8;
+}
+
+.hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input   {
+  content: '';
+  outline: none;
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: #fff;
+  border-radius: 100px;
+  transition: rotate 100ms ease-in-out;
+}
+
+.hamburger-btn::after {
+  margin: 0;
+}
+
+.hamburger-btn input   {
+  appearance: none;
+  transition: opacity 100ms ease-in-out;
+}
+
+.hamburger-btn input:checked   {
+  width: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hamburger-btn:has(input:checked)::before {
+  rotate: 45deg;
+  position: absolute;
+}
+
+.hamburger-btn:has(input:checked)::after {
+  rotate: -45deg;
 }
