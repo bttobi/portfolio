@@ -116,6 +116,7 @@ html, body, #root {
   align-items: center;
   align-content: center;
   transition: all 100ms ease-in-out;
+  width: 60px;
 }
 
 .hamburger-btn:hover {
@@ -131,26 +132,22 @@ html, body, #root {
 }
 
 .menu-item:hover {
-  background-color: rgb(97, 116, 142);
+  background-color: #61748e;
 }
 
 .menu-item:active {
-  transform: scale(0.92);
+  transform: scale(0.96);
   background-color: #3282b8;
 }
 
-.hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input   {
+.hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input {
   content: '';
   outline: none;
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: #fff;
   border-radius: 100px;
-  transition: rotate 150ms ease-in-out;
-}
-
-.hamburger-btn::after {
-  margin: 0;
+  transition: all 150ms ease-in-out;
 }
 
 .hamburger-btn input   {
@@ -161,18 +158,33 @@ html, body, #root {
 .hamburger-btn input:checked   {
   width: 0;
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+}
+
+.hamburger-btn:has(input:checked){
+  
 }
 
 .hamburger-btn:has(input:checked)::before {
+  width: calc(var(--bar-width)*1.2);
+  transform-origin: top left;
   rotate: 45deg;
-  position: absolute;
+  margin-inline: auto;
+  translate: 7px;
 }
 
 .hamburger-btn:has(input:checked)::after {
+  width: calc(var(--bar-width)*1.2);
+  transform-origin: bottom left;
   rotate: -45deg;
+  translate: 7px;
+}
+
+.modal-action {
+  background-color: #475569;
+  transition: all 100ms ease-in-out;
+  
+}
+
+.modal-action:hover {
+  background-color: #61748e;
 }
