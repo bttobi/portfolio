@@ -115,10 +115,19 @@ html, body, #root {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  transition: all 100ms ease-in-out;
+}
+
+.hamburger-btn:hover {
+  background-color: #4444444f;
+}
+
+.hamburger-btn:active {
+  transform: scale(0.92);
 }
 
 .menu-item {
-  transition: all 100ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .menu-item:hover {
@@ -137,7 +146,7 @@ html, body, #root {
   height: var(--bar-height);
   background-color: #fff;
   border-radius: 100px;
-  transition: rotate 100ms ease-in-out;
+  transition: rotate 150ms ease-in-out;
 }
 
 .hamburger-btn::after {
@@ -146,7 +155,7 @@ html, body, #root {
 
 .hamburger-btn input   {
   appearance: none;
-  transition: opacity 100ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
 }
 
 .hamburger-btn input:checked   {
