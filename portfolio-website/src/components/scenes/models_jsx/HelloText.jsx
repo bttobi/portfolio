@@ -11,8 +11,8 @@ export default function HelloText(props) {
   });
 
   return (
-    <group ref={textRef} {...props} dispose={null}>
-      <group position={[0, -1, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={0.06}>
+    <group position={[0.5, -1, 0]} ref={textRef} {...props} dispose={null} scale={0.06}>
+      <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes['3D_Text_-_H'].geometry} material={materials['Romeo 1']} position={[-58.88, 7.5, 0.8]} />
         <mesh geometry={nodes['3D_Text_-_e'].geometry} material={materials['Romeo 1']} position={[-27.96, 7.5, 0.8]} />
         <mesh geometry={nodes['3D_Text_-_l'].geometry} material={materials['Romeo 1']} position={[-3.66, 7.5, 0.8]} />
