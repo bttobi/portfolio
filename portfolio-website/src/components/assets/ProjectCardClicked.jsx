@@ -8,8 +8,8 @@ const ProjectCardClicked = ({projectInfo}) => {
       <label htmlFor={projectInfo.id} className="modal cursor-pointer">
         <label htmlFor="" className="modal-box h-min bg-gradient-to-r from-cyan-600 to-cyan-400">
           <label htmlFor={projectInfo.id} className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "><AiOutlineCloseCircle /></label>
-          <p className="font-bold text-xl text-center">Cat Page</p>
-          <p className="py-4 text-center">Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!</p>
+          <p className="font-bold text-xl text-center">{projectInfo.title}</p>
+          <p className="py-4 text-center">{projectInfo.desc}</p>
           <ul className="mt-4 flex flex-row align-center items-baseline justify-around">
             <li className="mt-2 flex flex-col items-center w-1/3">
               <img width="48" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="React.js" />
@@ -39,10 +39,10 @@ const ProjectCardClicked = ({projectInfo}) => {
             </li>
           </ul>
           <div className="button-wrapper flex align-center items-center justify-around">
-            <a href="#demo" className="modal-action btn w-min text-white" style={{backgroundColor: "#1b262c"}}>
+            <a href={projectInfo.demo_url} className="modal-action btn border-none font-bold p-3 rounded-lg w-min text-white">
               Demo
             </a>
-            <a href="#github" className="modal-action btn w-min text-white" style={{backgroundColor: "#1b262c"}}>
+            <a href={projectInfo.github_url} className="modal-action btn border-none font-bold p-3 rounded-lg w-min text-white">
               Github
             </a>
           </div>
