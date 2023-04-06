@@ -6,8 +6,12 @@ module.exports = {
     extend: {
       colors: 
       {
-        'bg-primary': '#74bde0',
-        'blue-dark': '#3282B8'
+        'primary-blue': '#74bde0',
+        'blue-dark': '#3282B8',
+        'blue-light': '#bbe1fa',
+        'gray-light': '#3c4757',
+        'gray-dark': '#222831',
+        'blue-darker': '#1b262c'
       },
     },
   },
