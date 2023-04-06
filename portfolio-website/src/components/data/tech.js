@@ -34,5 +34,5 @@ export const data = [
     img_url: "/react-router.svg",
     img_width: "72",
     img_height: "72",
-  },
+  }
 ]
