@@ -27,16 +27,12 @@ html, body, #root {
   background-image: url(/bg.svg);
   background-repeat: repeat-x;
   background-size: cover;
-  animation: toggle 80s infinite linear;
+  animation: toggle 30000s linear infinite alternate;
 }
 
 @keyframes toggle{
-  from {
-    background-position: 0%;
-  }
-  
   to {
-    background-position: 300%;
+    background-position: 100000% 0;
   }
 }
 
@@ -70,6 +66,10 @@ html, body, #root {
 
 .logo:hover{
   transform: rotate(20deg);
+}
+
+.logo:active{
+  transform: rotate(10deg);
 }
 
 .in-view{
@@ -182,9 +182,63 @@ html, body, #root {
 .modal-action {
   background-color: #475569;
   transition: all 100ms ease-in-out;
-  
+  word-break: break;
 }
 
 .modal-action:hover {
   background-color: #61748e;
+}
+
+.modal-action:active {
+  background-color: #3282b8;
+}
+
+/*DIVIDERS FROM https://www.shapedivider.app */
+
+.custom-shape-divider-top-1680792285 {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  opacity: 70%;
+  z-index: 0;
+}
+
+.custom-shape-divider-top-1680792285 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 92px;
+}
+
+.custom-shape-divider-top-1680792285 .shape-fill {
+  fill: #1B262C;
+}
+
+/* 2ND DIVIDER */
+.custom-shape-divider-top-1680793506 {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 70%;
+  z-index: 0;
+}
+
+.custom-shape-divider-top-1680793506 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 92px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1680793506 .shape-fill {
+  fill: #1B262C;
 }
