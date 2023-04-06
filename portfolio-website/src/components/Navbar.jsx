@@ -26,11 +26,11 @@ const Navbar = () => {
       <AnimatePresence>
         {hamburgerIsActive &&
         <motion.div className="cursor-pointer" initial={{y: "-4rem", opacity: 0}} animate={{y: "0rem", opacity: 1}} exit={{y: "-4rem", opacity: 0}}>
-          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-2 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center" style={{backgroundColor: "#222831"}}>
-            <a href="#home"><li className="menu-item p-1 rounded-lg bg-slate-600 w-40 mb-2">About</li></a>
-            <a href="#projects"><li className="menu-item p-1 rounded-lg bg-slate-600 w-40 mb-2">Projects</li></a>
-            <a href="#contact"><li className="menu-item p-1 rounded-lg bg-slate-600 w-40 mb-2">Contact</li></a>
-            <a href="logo.png"><li className="menu-item p-1 rounded-lg bg-slate-600 w-40">Resume</li></a>
+          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-2 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker">
+            <a href="#home"><li className="menu-item nav-button p-1 rounded-lg bg-slate-600 w-40 mb-2">About</li></a>
+            <a href="#projects"><li className="menu-item nav-button p-1 rounded-lg bg-slate-600 w-40 mb-2">Projects</li></a>
+            <a href="#contact"><li className="menu-item nav-button p-1 rounded-lg bg-slate-600 w-40 mb-2">Contact</li></a>
+            <a href="logo.png"><li className="menu-item nav-button p-1 rounded-lg bg-slate-600 w-40">Resume</li></a>
           </ul>
         </motion.div>}
       </AnimatePresence>
