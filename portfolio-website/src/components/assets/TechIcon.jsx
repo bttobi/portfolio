@@ -9,7 +9,7 @@ const TechIcon = ({name}) => {
             (chosenTech != undefined || chosenTech != null) &&
             <li className="mt-2 flex flex-col items-center w-1/3">
               <img src={chosenTech.img_url} width={chosenTech.img_width} alt={chosenTech.name} />
-              <span className="mt-2">{chosenTech.name}</span>
+              <span className="mt-2 text-center">{chosenTech.name}</span>
             </li>
           
   )
