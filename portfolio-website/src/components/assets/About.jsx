@@ -10,7 +10,7 @@ const About = () => {
           </div>
         </div>
         <article className="bio-description mt-8 text-left flex flex-col justify-center">
-          <p className="mx-8 lg:text-xl md:text-lg text-lg">Hi! I’m a front-end web developer and an ICT student at Poznań University of Technology based in Poland.</p>
+          <p className="mx-8 lg:text-2xl md:text-xl text-lg">Hi! I’m a front-end web developer and an ICT student at Poznań University of Technology based in Poland.</p>
           <div className="employment-history-wrapper w-full flex justify-center mt-4">
             <label htmlFor="employment-history" className="modal-action btn border-none font-bold p-3 rounded-lg text-white mx-8 w-auto h-min"><span className="text-center w-full">See work history</span></label>
           </div>

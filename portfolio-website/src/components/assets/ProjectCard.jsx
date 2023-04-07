@@ -9,7 +9,7 @@ const ProjectCard = ({projectInfo}) => {
         <div className="rounded-t-lg w-full h-full flex flex-col align-center justify-center items-center">
           <div className="absolute flex flex-col align-center justify-center items-center z-10 text-white lg:w-60 w-min lg:text-xl text-md">
             <p className="flex p-2 justify-center flex-wrap mt-0 lg:mt-10 z-20 rounded-lg lg:mb-0 bg-blue-darker bg-opacity-60">{projectInfo.name}</p>
-            <p className="flex justify-center flex-wrap  mt-10 z-20 p-1 rounded-lg bg-blue-darker bg-opacity-60">Click to see details</p>
+            <p className="flex justify-center flex-wrap w-min mt-10 z-20 p-1 rounded-lg bg-blue-darker bg-opacity-60">Click to see details</p>
           </div>
           {projectInfo.scene}
         </div>

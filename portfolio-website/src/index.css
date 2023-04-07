@@ -199,45 +199,6 @@ html, body, #root{
 
 /*DIVIDERS FROM https://www.shapedivider.app */
 
-.custom-shape-divider-top-1680792285 {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  opacity: 70%;
-  z-index: 0;
-}
-
-.custom-shape-divider-top-1680792285 svg {
-  display: flex;
-  width: calc(100%);
-  height: 92px;
-}
-
-.custom-shape-divider-top-1680792285 .shape-fill {
-  fill: #1B262C;
-}
-
-/* 2ND DIVIDER */
-.custom-shape-divider-top-1680793506 {
-  position: absolute;
-  top: auto;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  opacity: 70%;
-  z-index: 0;
-}
-
-.custom-shape-divider-top-1680793506 svg {
-  display: flex;
-  width: calc(100%);
-  height: 92px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1680793506 .shape-fill {
-  fill: #1B262C;
+#projects {
+  background-image: url("");
 }

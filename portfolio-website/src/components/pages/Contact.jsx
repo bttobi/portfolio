@@ -13,10 +13,10 @@ const Contact = () => {
 
   return (<>
       <div id="contact" style={{height: "auto", width: "100%"}} className="article flex flex-col items-center align-center">
-        <div className="social-icons-wrapper h-full w-full mb-20 flex flex-col items-center">
+        <div className="social-icons-wrapper h-full w-full flex flex-col items-center" style={{height:"100vh"}}>
           <p className="text-2xl font-bold w-full text-center mt-24">Contact me: </p>
           <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
-            <li className="modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black flex justify-center w-full" onClick={copyToClipboard}>
+            <li className="modal-action btn border-none font-bold p-3 px-4 rounded-lg text-white h-min shadow-md shadow-black flex justify-center w-full" onClick={copyToClipboard}>
               <div className="flex lg:flex-row flex-col justify-center align-center items-center">
                 <FiMail size={64}/>
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
@@ -36,7 +36,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-          <footer className="footer footer-center text-base-content rounded self-end my-8 w-full">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
+          <footer className="footer footer-center text-base-content rounded self-end mb-8 w-full">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
       </div>
       <AnimatePresence>
         {isVisible &&
