@@ -12,9 +12,9 @@ const Contact = () => {
   }
 
   return (<>
-      <div id="contact" style={{height: "100vh", width: "100%"}} className="article flex flex-col items-center align-center">
-        <div className="social-icons-wrapper h-full w-full pt-40 flex flex-col items-center">
-          <p className="text-2xl font-bold w-full text-center pb-16">Contact me: </p>
+      <div id="contact" style={{height: "auto", width: "100%"}} className="article flex flex-col items-center align-center">
+        <div className="social-icons-wrapper h-full w-full mb-20 flex flex-col items-center">
+          <p className="text-2xl font-bold w-full text-center mt-24">Contact me: </p>
           <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
             <li className="modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black flex justify-center w-full" onClick={copyToClipboard}>
               <div className="flex lg:flex-row flex-col justify-center align-center items-center">
@@ -24,13 +24,13 @@ const Contact = () => {
             </li>
             <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
               <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="72px" alt="linkedin icon" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="64" alt="linkedin icon" />
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
               </a>
             </li>
             <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
               <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://github.com/bttobi" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="72px" alt="github icon" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="64" alt="github icon" />
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
               </a>
             </li>
