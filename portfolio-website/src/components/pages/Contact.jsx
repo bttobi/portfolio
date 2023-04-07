@@ -1,19 +1,54 @@
-import React from 'react'
+import { AnimatePresence, motion } from 'framer-motion';
+import React, {useState} from 'react';
+import { FiMail } from 'react-icons/fi';
 
 const Contact = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const copyToClipboard = () => {
+    setIsVisible(true);
+    setTimeout(()=>{setIsVisible(false)},1000)
+    navigator.clipboard.writeText(document.getElementById("email").textContent);
+  }
+
   return (<>
-      <div className="custom-shape-divider-top-1680793506">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" className="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
-        </svg>
+      <div id="contact" style={{height: "100vh", width: "100%"}} className="article flex flex-col items-center align-center">
+        <div className="social-icons-wrapper h-full w-full pt-40 flex flex-col items-center">
+          <p className="text-2xl font-bold w-full text-center pb-16">Contact me: </p>
+          <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
+            <li className="modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black flex justify-center w-full" onClick={copyToClipboard}>
+              <div className="flex lg:flex-row flex-col justify-center align-center items-center">
+                <FiMail size={64}/>
+                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
+              </div>
+            </li>
+            <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
+              <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="72px" alt="linkedin icon" />
+                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
+              </a>
+            </li>
+            <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
+              <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://github.com/bttobi" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="72px" alt="github icon" />
+                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+          <footer className="footer footer-center text-base-content rounded self-end my-8 w-full">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
       </div>
-      <div id="contact" style={{height: "100vh", width: "100%"}} className="article flex flex-row">
-        <footer className="footer footer-center text-base-content rounded self-end p-6">
-            <p>Copyright © 2023 - All right reserved by Bartosz Tobiński</p>
-        </footer>
-      </div>
+      <AnimatePresence>
+        {isVisible &&
+        <motion.div className="w-full flex justify-center fixed bottom-32" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+          <div className="alert bg-blue-dark shadow-lg w-auto">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="text-white font-primary">Copied to clipboard!</span>
+            </div>
+          </div>
+        </motion.div>}
+      </AnimatePresence>  
     </>
   )
 }
