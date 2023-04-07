@@ -13,6 +13,10 @@ module.exports = {
         'gray-dark': '#222831',
         'blue-darker': '#1b262c'
       },
+      fontFamily:
+      {
+        'primary': ['"Red Hat Display"', 'sans-serif']
+      }
     },
   },
   

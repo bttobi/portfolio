@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
-import {motion, AnimatePresence, useInView} from 'framer-motion';
+import {motion, AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
 import isInView from './components/functions/isInView';
 
