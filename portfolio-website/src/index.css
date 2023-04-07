@@ -9,20 +9,19 @@
   --hamburger-gap: 6px; /*square root of 2*/ 
 }
 
-html, body, #root {
+html, body, #root, .App {
   width: 100%;
   height: 300vh;
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   font-family: 'Red Hat Display', sans-serif;
   color: white;
   scroll-behavior: smooth;
 }
 
 .App{
-  width: 100%;
-  height: 300vh;
-  margin: none;
+  margin: 0;
+  padding: 0;
   background-color: black;
   background-image: url(/bg.svg);
   background-repeat: repeat-x;
@@ -96,17 +95,24 @@ html, body, #root {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #00000000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9f9f9f;
+  background: #d3d3d3;
+  border-radius: 90px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #a2a2a2;
+}
+
+@media screen and (max-width: 600px){
+  ::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
 }
 
 .hamburger-btn {
@@ -160,10 +166,6 @@ html, body, #root {
   opacity: 0;
 }
 
-.hamburger-btn:has(input:checked){
-  
-}
-
 .hamburger-btn:has(input:checked)::before {
   width: calc(var(--bar-width)*1.2);
   transform-origin: top left;
@@ -182,7 +184,6 @@ html, body, #root {
 .modal-action {
   background-color: #475569;
   transition: all 100ms ease-in-out;
-  word-break: break;
 }
 
 .modal-action:hover {
@@ -197,9 +198,6 @@ html, body, #root {
 
 .custom-shape-divider-top-1680792285 {
   position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
@@ -209,9 +207,8 @@ html, body, #root {
 }
 
 .custom-shape-divider-top-1680792285 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
+  display: flex;
+  width: calc(100%);
   height: 92px;
 }
 
@@ -232,9 +229,8 @@ html, body, #root {
 }
 
 .custom-shape-divider-top-1680793506 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
+  display: flex;
+  width: calc(100%);
   height: 92px;
   transform: rotateY(180deg);
 }
