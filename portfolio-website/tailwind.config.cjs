@@ -4,6 +4,9 @@ module.exports = {
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      boxShadow: {
+        'top-bottom': '0px 1px 20px #000, 0px 1px 20px #000;',
+      },
       colors: 
       {
         'primary-blue': '#74bde0',
