@@ -22,14 +22,14 @@ const Contact = () => {
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
               </div>
             </li>
-            <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
+            <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
+              <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="64" alt="linkedin icon" />
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
               </a>
             </li>
-            <li className="flex justify-center align-center items-center modal-action btn border-none font-bold p-3 rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <a className="flex lg:flex-row flex-col justify-center align-center items-center" href="https://github.com/bttobi" target="_blank">
+            <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
+              <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="64" alt="github icon" />
                 <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
               </a>
