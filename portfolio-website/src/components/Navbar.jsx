@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="home-wrapper h-full w-min flex justify-between grow whitespace-nowrap">
         <a href="#home" className="name-surname home-page w-16 lg:w-min font-bold lg:ml-6 flex align-center justify-center items-center">
           <img className="logo ml-0 lg:ml-4" src="./logo.png" alt="bartosz tobinski logo picture" width="60px"/>
-          <p className="nav-button name-and-surname ml-4 p-1 hidden lg:block rounded-lg">BARTOSZ TOBIŃSKI</p>
+          <p className="nav-button active-nav name-and-surname ml-4 p-1 hidden lg:block rounded-lg">BARTOSZ TOBIŃSKI</p>
         </a>
         <a href="#projects" className="nav-button projects-link p-1 rounded-lg hidden lg:block">PROJECTS</a>
         <a href="#contact" className="nav-button contacts-link p-1 rounded-lg hidden lg:block">CONTACT</a>
