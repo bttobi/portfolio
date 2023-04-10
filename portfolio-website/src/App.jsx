@@ -15,7 +15,7 @@ function App() {
 
   return (
     <AnimatePresence>
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="App">
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} id="App">
         <Navbar />
         <Home />
         <Projects />
