@@ -12,32 +12,36 @@ const Contact = () => {
   }
 
   return (<>
-      <div id="contact" style={{height: "auto", width: "100%"}} className="article flex flex-col items-center align-center">
+      <section id="contact" style={{height: "auto", width: "100%"}} className="article flex flex-col items-center align-center">
         <div className="social-icons-wrapper w-full flex flex-col items-center" style={{height: "100vh"}}>
           <p className="text-2xl font-bold w-full text-center pt-24">Contact me: </p>
           <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
-            <li className="modal-action btn border-none font-bold p-3 px-4 rounded-lg text-white h-min shadow-md shadow-black flex justify-center w-full" onClick={copyToClipboard}>
-              <div className="flex lg:flex-row flex-col justify-center align-center items-center">
-                <FiMail size={64}/>
-                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
-              </div>
+            <li className="modal-action btn border-none font-bold rounded-lg text-white h-min p-0 shadow-md shadow-black flex justify-center w-full">
+            <button className="flex lg:flex-row flex-col justify-center align-center items-center p-3 px-4 w-full h-full" aria-label="Copy email address" onClick={copyToClipboard}>
+              <FiMail size={64}/>
+              <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
+            </button>
             </li>
             <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="64" alt="linkedin icon" />
-                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
-              </a>
+              <button className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full" aria-label="Go to LinkedIn">
+                <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="64" alt="linkedin icon" />
+                  <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
+                </a>
+              </button>
             </li>
             <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="64" alt="github icon" />
-                <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
-              </a>
+              <button className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full" aria-label="Go to Github">
+                <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="64" alt="github icon" />
+                  <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
+                </a>
+              </button>
             </li>
           </ul>
         </div>
           <footer className="footer footer-center text-base-content rounded self-end my-4 w-full">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
-      </div>
+      </section>
       <AnimatePresence>
         {isVisible &&
         <motion.div className="w-full flex justify-center fixed bottom-32" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
