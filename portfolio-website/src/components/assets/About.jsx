@@ -12,8 +12,8 @@ const About = () => {
         <article className="bio-description mt-8 text-left flex flex-col justify-center">
           <p className="mx-8 lg:text-2xl md:text-xl text-lg">Hi! I'm front-end web developer and an ICT student at Poznań University of Technology based in Poland.</p>
           <div className="employment-history-wrapper w-full flex justify-center mt-4">
-            <button aria-label="See work history">
-              <label htmlFor="employment-history" className="modal-action btn border-none font-bold p-3 rounded-lg text-white mx-8 w-auto h-min">
+            <button className="m-4" aria-label="See work history">
+              <label htmlFor="employment-history" className="modal-action btn border-none font-bold p-3 m-0 rounded-lg text-white w-auto h-min">
                 <span className="text-center w-full">See work history</span>
               </label>
             </button>
