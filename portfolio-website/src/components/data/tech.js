@@ -31,8 +31,8 @@ export const data = [
   },
   {
     name: "React Router",
-    img_url: "/react-router.svg",
-    img_width: "72",
-    img_height: "72",
+    img_url: "https://reactrouter.com/_brand/react-router-mark-color.png",
+    img_width: "48",
+    img_height: "48",
   }
 ]
