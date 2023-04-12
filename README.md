@@ -49,7 +49,8 @@ Application should be hosted in your local network automatically.
 #
 
 ### 🎯 To do:
-Implement tests
+- Implement tests
+- Possibly add EmailJS
 
 
 
