@@ -91,36 +91,32 @@ html, body, #root{
 .active-nav {
   background-color: #4444444f;
 }
-/* width */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #00000000;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #d3d3d3;
   border-radius: 90px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a2a2a2;
 }
 
-
 .hamburger-btn {
+  width: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   transition: all 100ms ease-in-out;
-  width: 60px;
 }
 
 .hamburger-btn:hover {

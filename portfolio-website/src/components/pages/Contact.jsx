@@ -44,7 +44,7 @@ const Contact = () => {
       </section>
       <AnimatePresence>
         {isVisible &&
-        <motion.div className="w-full flex justify-center fixed bottom-32" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+        <motion.div className="w-full flex justify-center fixed bottom-32 z-30" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
           <div className="alert bg-blue-dark shadow-lg w-auto">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
