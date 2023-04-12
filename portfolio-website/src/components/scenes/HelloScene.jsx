@@ -6,7 +6,7 @@ import Loading from '../assets/Loading';
 
 const HelloScene = () => {
   return (
-  <div className="lg:order-2 order-1 w-full lg:w-1/2 h-64 lg:h-2/5 mt-10 lg:m-0">
+  <div className="lg:order-2 order-1 w-full lg:w-1/2 h-64 lg:h-2/5 mt-32 lg:m-0">
     <Suspense fallback={<Loading />}>
       <Canvas>
         <ambientLight intensity={0.5}/>
