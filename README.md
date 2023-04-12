@@ -19,7 +19,8 @@ In order to clone the project repository run: <br/>
 
 #
 
-### 🔧 Install Node.js and npm from:
+### 🔧 Install Node.js and npm:
+Install from:
 `https://nodejs.org/en`
 
 #
