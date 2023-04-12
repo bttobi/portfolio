@@ -19,6 +19,11 @@ In order to clone the project repository run: <br/>
 
 #
 
+### 🔧 Install Node.js and npm from:
+`https://nodejs.org/en`
+
+#
+
 ### 🔧 How to install all dependencies and packages:
 Run the following commands: <br/>
 `cd portfolio-website` <br/>
