@@ -12,7 +12,7 @@ const Contact = () => {
   }
 
   return (<>
-      <section id="contact" style={{height: "100vh", width: "100%"}} className="article flex flex-col items-center align-center">
+      <section id="contact" style={{height: "100%", width: "100%"}} className="article flex flex-col items-center align-center">
         <div className="social-icons-wrapper w-full flex flex-col items-center justify-center content-center" style={{height: "100vh"}}>
           <p className="text-2xl font-bold w-full text-center pt-24">Contact me: </p>
           <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
