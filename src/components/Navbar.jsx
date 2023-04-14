@@ -32,26 +32,18 @@ const Navbar = () => {
       <AnimatePresence>
         {hamburgerIsActive &&
         <motion.div className="cursor-pointer" initial={{y: "-4rem", opacity: 0}} animate={{y: "0rem", opacity: 1}} exit={{y: "-4rem", opacity: 0}}>
-          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-2 py-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker">
-            <li className="flex rounded-lg bg-slate-600 w-40 mb-2">
-              <button aria-label="Go to about section" className="menu-item p-1 w-full h-full">
-                <a href="#home" className="w-full h-full">About</a>
-              </button>
+          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker">
+            <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full mb-2">
+                <a aria-label="Go to about section" href="#home" className="text-center w-full h-full p-1 mx-2">About</a>
             </li>
-            <li className="flex rounded-lg bg-slate-600 w-40 mb-2">
-              <button aria-label="Go to projects section" className="menu-item p-1 w-full h-full">
-                <a href="#projects" className="w-full h-full">Projects</a>
-              </button>
+            <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full mb-2">
+                <a aria-label="Go to projects section" href="#projects" className="text-center w-full h-full p-1 mx-2">Projects</a>
             </li>
-            <li className="flex rounded-lg bg-slate-600 w-40 mb-2">
-              <button aria-label="Go to contact section" className="menu-item p-1 w-full h-full">
-                <a href="#contact" className="w-full h-full">Contact</a>
-              </button>
+            <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full mb-2">
+                <a aria-label="Go to contact section" href="#contact" className="text-center w-full h-full p-1 mx-2">Contact</a>
             </li>
-            <li className="flex rounded-lg bg-slate-600 w-40">
-              <button aria-label="Download resume" className="menu-item p-1 w-full h-full">
-                <a href="logo.png" className="w-full h-full">Resume</a>
-              </button>
+            <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full">
+              <a aria-label="Download resume" href="https://drive.google.com/file/d/1tYGYaCDJRz65o8d_DsCLQelY7daV0U7u/view?usp=sharing" className="text-center w-full h-full p-1 mx-2">Resume</a>
             </li>
           </ul>
         </motion.div>}
