@@ -18,7 +18,6 @@ html, body, #root{
   scroll-behavior: smooth;
   font-family: 'Red Hat Display', sans-serif;
   color: white;
-  overflow:overlay;
 }
 
 #App{
@@ -97,7 +96,7 @@ html, body, #root{
 }
 
 ::-webkit-scrollbar-track {
-  background: #00000000;
+  background: #1b262c;
 }
 
 ::-webkit-scrollbar-thumb {
