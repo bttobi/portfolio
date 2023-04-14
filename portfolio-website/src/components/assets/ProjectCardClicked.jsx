@@ -18,7 +18,7 @@ const ProjectCardClicked = ({projectInfo}) => {
               <TechIcon name={techName} key={index}/>
             )}
           </ul>
-          {projectInfo.name != "Coming Soon" &&
+          {projectInfo.name != "Coming Soon" && //to be implemented
           <div className="button-wrapper flex align-center items-center justify-around">
             <button className="mt-8" aria-label="Open project demo">
               <a href={projectInfo.demo_url} className="modal-action btn border-none font-bold p-3 m-0 rounded-lg w-min text-white" target="_blank">

@@ -17,7 +17,7 @@ export const data = [
     name: "Cat Page",
     scene: <CatDispScene />,
     desc: "Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!",
-    demo_url: "#demo",
+    demo_url: "https://bttobi.github.io/cat_page/",
     github_url: "https://github.com/bttobi/cat_page",
     tech: ["React.js", "Firebase", "React Query", "Tailwind CSS", "daisyUI", "React Router"]
   },
