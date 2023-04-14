@@ -40,7 +40,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-          <footer className="footer footer-center text-base-content rounded self-end my-4 w-full">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
+          <footer className="footer footer-center text-base-content rounded self-end my-4 w-full h-min">Copyright © 2023 - All right reserved by Bartosz Tobiński</footer>
       </section>
       <AnimatePresence>
         {isVisible &&
