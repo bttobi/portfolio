@@ -1,12 +1,28 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {motion, AnimatePresence} from 'framer-motion';
 
 const Navbar = () => {
   const hamburgerRef = useRef();
   const [hamburgerIsActive, setHamburgerIsActive] = useState(false);
+  const [hamburgerChecked, setHamburgerChecked] = useState(false);
+  
   const changeVisibility = () => {
-    setHamburgerIsActive(hamburgerRef?.current?.checked)
+    setHamburgerChecked(true);
+    setHamburgerIsActive(hamburgerRef?.current?.checked);
   }
+
+  const handleAnimation = (e) => {
+    if(e.target != hamburgerRef?.current){
+      setHamburgerIsActive(false);
+      setHamburgerChecked(false);
+    }
+  }
+
+  useEffect(()=>{
+    document.addEventListener('click', e => handleAnimation(e));
+    return document.removeEventListener('click', e => handleAnimation(e));
+  }, []);
+
   return (
     <nav className="navbar backdrop-blur-sm bg-white/10 flex flex-row align-center justify-start fixed m-0 p-0 text-white w-full h-10 z-20 text-3xl">
       <div className="home-wrapper h-full w-min flex justify-between grow whitespace-nowrap">
@@ -27,7 +43,7 @@ const Navbar = () => {
         </button>
       </div>
       <label className="hamburger-btn mr-1 h-3/4 rounded-lg lg:hidden cursor-pointer">
-        <input aria-label="Open hamburger menu" className="cursor-pointer absolute" ref={hamburgerRef} onChange={changeVisibility} type="checkbox"/>
+        <input aria-label="Open hamburger menu" className="cursor-pointer absolute" ref={hamburgerRef} onChange={changeVisibility} checked={hamburgerChecked} type="checkbox"/>
       </label>
       <AnimatePresence>
         {hamburgerIsActive &&
