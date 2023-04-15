@@ -13,7 +13,7 @@ const Navbar = () => {
     e.stopPropagation();
     if(hamburgerRef?.current && !hamburgerRef?.current.contains(e.target)){
       setHamburgerIsActive(false);
-      hamburgerRef.current.checked = false;
+      hamburgerRef.current.firstChild.checked = false;
     }
   }
 
@@ -41,13 +41,13 @@ const Navbar = () => {
           <a href="https://drive.google.com/file/d/1tYGYaCDJRz65o8d_DsCLQelY7daV0U7u/view?usp=sharing" target="_blank" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
         </button>
       </div>
-      <label ref={hamburgerRef} className="hamburger-btn w-full h-3/4 rounded-lg lg:hidden cursor-pointer m-0 p-0">
-        <input aria-label="Open hamburger menu" className="hamburger-btn w-0 h-0 cursor-pointer absolute z-20 p-0 m-0" onChange={changeVisibility} type="checkbox"/>
+      <label ref={hamburgerRef} className="hamburger-btn w-full h-3/4 rounded-lg lg:hidden cursor-pointer">
+        <input aria-label="Open hamburger menu" className="hamburger-btn w-0 h-0 cursor-pointer absolute p-0 m-0" onChange={changeVisibility} type="checkbox"/>
       </label>
       <AnimatePresence>
         {hamburgerIsActive &&
         <motion.div className="cursor-pointer" initial={{y: "-4rem", opacity: 0}} animate={{y: "0rem", opacity: 1}} exit={{y: "-4rem", opacity: 0}}>
-          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker h-min">
+          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker">
             <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full mb-2">
                 <a aria-label="Go to about section" href="#home" className="text-center w-full h-full p-1">About</a>
             </li>
