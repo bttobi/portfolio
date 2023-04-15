@@ -41,8 +41,8 @@ const Navbar = () => {
           <a href="https://drive.google.com/file/d/1tYGYaCDJRz65o8d_DsCLQelY7daV0U7u/view?usp=sharing" target="_blank" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
         </button>
       </div>
-      <label className="hamburger-btn w-full h-3/4 rounded-lg lg:hidden cursor-pointer m-0 p-0">
-        <input aria-label="Open hamburger menu" className="hamburger-btn w-full h-full cursor-pointer absolute z-20 p-0 m-0" onChange={changeVisibility} ref={hamburgerRef} type="checkbox"/>
+      <label ref={hamburgerRef} className="hamburger-btn w-full h-3/4 rounded-lg lg:hidden cursor-pointer m-0 p-0">
+        <input aria-label="Open hamburger menu" className="hamburger-btn w-0 h-0 cursor-pointer absolute z-20 p-0 m-0" onChange={changeVisibility} type="checkbox"/>
       </label>
       <AnimatePresence>
         {hamburgerIsActive &&
