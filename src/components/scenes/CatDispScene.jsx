@@ -7,7 +7,7 @@ import Loading from '../assets/Loading';
 const CatDispScene = () => {
   return (
   <Suspense fallback={<Loading/>}>
-    <Canvas className="flex" style={{width: "100%", height: "100%"}}>
+    <Canvas>
       <OrbitControls enableZoom={false}/>
       <ambientLight intensity={0.5}/>
       <CatDispenser />

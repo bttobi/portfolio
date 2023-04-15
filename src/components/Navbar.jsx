@@ -47,7 +47,7 @@ const Navbar = () => {
       <AnimatePresence>
         {hamburgerIsActive &&
         <motion.div className="cursor-pointer" initial={{y: "-4rem", opacity: 0}} animate={{y: "0rem", opacity: 1}} exit={{y: "-4rem", opacity: 0}}>
-          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker">
+          <ul className="hamburger-menu text-lg lg:hidden absolute right-0 p-4 mt-64 shadow rounded-box w-48 flex flex-col text-center justify-center items-center bg-blue-darker h-min">
             <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full mb-2">
                 <a aria-label="Go to about section" href="#home" className="text-center w-full h-full p-1">About</a>
             </li>

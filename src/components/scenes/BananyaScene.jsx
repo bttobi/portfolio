@@ -7,7 +7,7 @@ import Bananya from './models_jsx/Bananya';
 const CatDispScene = () => {
   return (
   <Suspense fallback={<Loading/>}>
-    <Canvas className="flex" style={{width: "100%", height: "100%"}}>
+    <Canvas>
       <OrbitControls enableZoom={false}/>
       <ambientLight intensity={1}/>
       <Bananya />
