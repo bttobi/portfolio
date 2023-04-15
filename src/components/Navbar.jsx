@@ -4,23 +4,26 @@ import {motion, AnimatePresence} from 'framer-motion';
 const Navbar = () => {
   const hamburgerRef = useRef();
   const [hamburgerIsActive, setHamburgerIsActive] = useState(false);
-  const [hamburgerChecked, setHamburgerChecked] = useState(false);
   
   const changeVisibility = () => {
-    setHamburgerChecked(true);
-    setHamburgerIsActive(hamburgerRef?.current?.checked);
+    setHamburgerIsActive(!hamburgerIsActive);
   }
 
+
   const handleAnimation = (e) => {
-    if(e.target != hamburgerRef?.current){
+    e.stopPropagation();
+    if(hamburgerRef?.current && !hamburgerRef?.current.contains(e.target)){
+      console.log("outside")
       setHamburgerIsActive(false);
-      setHamburgerChecked(false);
+      hamburgerRef.current.checked = false;
     }
   }
 
+  console.log(hamburgerRef?.current?.checked)
+
   useEffect(()=>{
-    document.addEventListener('click', e => handleAnimation(e));
-    return document.removeEventListener('click', e => handleAnimation(e));
+    window.addEventListener('click', e => handleAnimation(e));
+    return window.removeEventListener('click', e => handleAnimation(e));
   }, []);
 
   return (
@@ -39,11 +42,11 @@ const Navbar = () => {
           <a href="#contact" className="nav-button contacts-link p-1 rounded-lg hidden lg:block">CONTACT</a>
         </button>
         <button aria-label="Download resume">
-          <a href="logo.png" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
+          <a href="https://drive.google.com/file/d/1tYGYaCDJRz65o8d_DsCLQelY7daV0U7u/view?usp=sharing" target="_blank" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
         </button>
       </div>
-      <label className="hamburger-btn mr-1 h-3/4 rounded-lg lg:hidden cursor-pointer">
-        <input aria-label="Open hamburger menu" className="cursor-pointer absolute" ref={hamburgerRef} onChange={changeVisibility} checked={hamburgerChecked} type="checkbox"/>
+      <label className="hamburger-btn w-full h-3/4 rounded-lg cursor-pointer m-0 p-0">
+        <input aria-label="Open hamburger menu" className="hamburger-btn w-full h-full cursor-pointer absolute z-20 p-0 m-0" onChange={changeVisibility} ref={hamburgerRef} type="checkbox"/>
       </label>
       <AnimatePresence>
         {hamburgerIsActive &&
