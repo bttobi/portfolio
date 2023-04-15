@@ -9,17 +9,13 @@ const Navbar = () => {
     setHamburgerIsActive(!hamburgerIsActive);
   }
 
-
   const handleAnimation = (e) => {
     e.stopPropagation();
     if(hamburgerRef?.current && !hamburgerRef?.current.contains(e.target)){
-      console.log("outside")
       setHamburgerIsActive(false);
       hamburgerRef.current.checked = false;
     }
   }
-
-  console.log(hamburgerRef?.current?.checked)
 
   useEffect(()=>{
     window.addEventListener('click', e => handleAnimation(e));
