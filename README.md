@@ -27,7 +27,6 @@ Install from:
 
 ### 🔧 How to install all dependencies and packages
 Run the following commands: <br/>
-`cd portfolio-website` <br/>
 `npm install`
 
 #
