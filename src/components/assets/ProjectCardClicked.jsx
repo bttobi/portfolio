@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 import TechIcon from './TechIcon';
 
 const ProjectCardClicked = ({projectInfo}) => {
@@ -9,7 +9,7 @@ const ProjectCardClicked = ({projectInfo}) => {
       <label htmlFor={projectInfo.id} className="modal cursor-pointer">
         <label className="modal-box h-min bg-gradient-to-r from-cyan-600 to-cyan-400">
           <button aria-label="Close modal">
-            <label htmlFor={projectInfo.id} className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "><AiOutlineCloseCircle size={20}/></label>
+            <label htmlFor={projectInfo.id} className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "><GrClose fill={"white"} size={20}/></label>
           </button>
           <p className="font-bold text-xl text-center">{projectInfo.name}</p>
           <p className="py-4 text-center">{projectInfo.desc}</p>
