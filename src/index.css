@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,8 +12,8 @@ html, body, #root{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Red Hat Display', sans-serif;
   color: white;
+  font-family: 'Red Hat Display', 'sans-serif';
 }
 
 #App{
@@ -39,7 +38,7 @@ html, body, #root{
 }
 
 .projects-link:hover, .name-and-surname:hover, .contacts-link:hover{
-  background-color: #4444444f;
+  background-color: #f5bd5465;
 }
 
 .projects-link:active, .name-and-surname:active, .contacts-link:active{
@@ -85,7 +84,7 @@ html, body, #root{
 }
 
 .active-nav {
-  background-color: #4444444f;
+  color: #f5bc54;
 }
 
 ::-webkit-scrollbar {
@@ -124,6 +123,7 @@ html, body, #root{
 }
 
 .menu-item {
+  background-color: #324752;
   transition: all 150ms ease-in-out;
 }
 
@@ -172,16 +172,16 @@ html, body, #root{
 }
 
 .modal-action {
-  background-color: #475569;
+  background-color: #d89446;
   transition: all 100ms ease-in-out;
 }
 
 .modal-action:hover {
-  background-color: #61748e;
+  background-color: #b97742;
 }
 
 .modal-action:active {
-  background-color: #3282b8;
+  background-color: #f5bc54;
 }
 
 #projects {
