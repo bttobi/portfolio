@@ -14,27 +14,27 @@ const Contact = () => {
   return (<>
       <section id="contact" style={{minHeight: "100vh", width: "100%"}} className="article flex flex-col items-center align-center">
         <div className="social-icons-wrapper w-full flex flex-col items-center justify-center content-center" style={{minHeight: "90vh"}}>
-          <p className="text-2xl font-bold w-full text-center pt-24">Contact me: </p>
-          <ul className="flex flex-col justify-center align-center items-center content-stretch gap-8 h-min w-auto">
-            <li className="modal-action btn border-none font-bold rounded-lg text-white h-min p-0 shadow-md shadow-black flex justify-center w-full">
-            <button className="flex lg:flex-row flex-col justify-center align-center items-center p-3 px-4 w-full h-full" aria-label="Copy email address" onClick={copyToClipboard}>
-              <FiMail size={64}/>
-              <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg" id="email">bartosz@tobinski.pl</span>
-            </button>
+          <p className="text-2xl font-bold w-full text-center pt-24 font-article">Contact me: </p>
+          <ul className="flex lg:flex-row lg:w-full w-min mt-8 lg:px-16 px-0 mx-8 flex-col justify-center align-center items-center content-stretch gap-8 h-min">
+            <li className="border-none lg:w-0 w-full menu-item font-bold rounded-lg text-white h-min p-0 shadow-md shadow-black flex justify-center flex-grow basis-0">
+              <button className="flex justify-center align-center items-center p-3 px-4 h-full" aria-label="Copy email address" onClick={copyToClipboard}>
+                <FiMail size={48}/>
+                <span className="ml-4 text-lg" id="email">bartosz@tobinski.pl</span>
+              </button>
             </li>
-            <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <button className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full" aria-label="Go to LinkedIn">
-                <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="64" alt="linkedin icon" />
-                  <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">LinkedIn</span>
+            <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
+              <button className="flex justify-center align-center items-center px-4 h-full" aria-label="Go to LinkedIn">
+                <a className="flex justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="48" alt="linkedin icon" />
+                  <span className="ml-4 text-lg">LinkedIn</span>
                 </a>
               </button>
             </li>
-            <li className="flex justify-center align-center items-center modal-action p-0 btn border-none font-bold rounded-lg text-white h-min shadow-md shadow-black w-full">
-              <button className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full" aria-label="Go to Github">
-                <a className="flex lg:flex-row flex-col justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="64" alt="github icon" />
-                  <span className="lg:ml-2 lg:mt-0 m-0 mt-4 text-lg">Github</span>
+            <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
+              <button className="flex justify-center align-center items-center px-4 h-full" aria-label="Go to Github">
+                <a className="flex justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="48" alt="github icon" />
+                  <span className="ml-4 text-lg">Github</span>
                 </a>
               </button>
             </li>
