@@ -3,6 +3,11 @@ module.exports = {
   content:  ["./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
+    fontFamily:
+      {
+        'main': ['"Red Hat Display"', 'sans-serif'],
+        'article': ['"Red Hat Mono"', 'monospace']
+      },
     extend: {
       boxShadow: {
         'top-bottom': '0px 1px 20px #000, 0px 1px 20px #000;',
@@ -18,7 +23,8 @@ module.exports = {
       },
       fontFamily:
       {
-        'primary': ['"Red Hat Display"', 'sans-serif']
+        'main': ['"Red Hat Display"', 'sans-serif'],
+        'article': ['"Red Hat Mono"', 'monospace']
       }
     },
   },
