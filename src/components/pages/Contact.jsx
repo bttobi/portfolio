@@ -17,22 +17,22 @@ const Contact = () => {
           <p className="text-2xl font-bold w-full text-center pt-24 font-article">Contact me: </p>
           <ul className="flex lg:flex-row lg:w-full w-min mt-8 lg:px-16 px-0 mx-8 flex-col justify-center align-center items-center content-stretch gap-8 h-min">
             <li className="border-none lg:w-0 w-full menu-item font-bold rounded-lg text-white h-min p-0 shadow-md shadow-black flex justify-center flex-grow basis-0">
-              <button className="flex justify-center align-center items-center p-3 px-4 h-full" aria-label="Copy email address" onClick={copyToClipboard}>
+              <button className="flex justify-center align-center items-center p-3 px-4 h-full w-full" aria-label="Copy email address" onClick={copyToClipboard}>
                 <FiMail size={48}/>
                 <span className="ml-4 text-lg" id="email">bartosz@tobinski.pl</span>
               </button>
             </li>
             <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
-              <button className="flex justify-center align-center items-center px-4 h-full" aria-label="Go to LinkedIn">
-                <a className="flex justify-center align-center items-center w-full h-full p-3" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
+              <button className="flex justify-center align-center items-center h-full w-full" aria-label="Go to LinkedIn">
+                <a className="flex justify-center align-center items-center w-full h-full p-3 px-4" href="https://www.linkedin.com/in/bartosz-tobiński-525864246/" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="48" alt="linkedin icon" />
                   <span className="ml-4 text-lg">LinkedIn</span>
                 </a>
               </button>
             </li>
             <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
-              <button className="flex justify-center align-center items-center px-4 h-full" aria-label="Go to Github">
-                <a className="flex justify-center align-center items-center w-full h-full p-3" href="https://github.com/bttobi" target="_blank">
+              <button className="flex justify-center align-center items-center w-full h-full" aria-label="Go to Github">
+                <a className="flex justify-center align-center items-center w-full h-full p-3 px-4" href="https://github.com/bttobi" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="48" alt="github icon" />
                   <span className="ml-4 text-lg">Github</span>
                 </a>
