@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="#contact" className="nav-button contacts-link p-1 rounded-lg hidden lg:block">CONTACT</a>
         </button>
         <button aria-label="Download resume">
-          <a href="https://drive.google.com/file/d/1mIzWeEQ_W93nDzHXN706Ii0r2VcPYTRf/view?usp=share_link" target="_blank" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
+          <a href="https://drive.google.com/file/d/1XuVbwCyC0X99F_6onomKwDRQNhacAUhx/view?usp=sharing" target="_blank" download className="nav-button contacts-link p-1 rounded-lg hidden lg:block mr-4">RESUME</a>
         </button>
       </div>
       <label ref={hamburgerRef} className="hamburger-btn w-full h-3/4 rounded-lg lg:hidden cursor-pointer">
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <a aria-label="Go to contact section" href="#contact" className="text-center w-full h-full p-1">Contact</a>
             </li>
             <li className="menu-item flex rounded-lg bg-slate-600 w-full h-full">
-              <a aria-label="Download resume" href="https://drive.google.com/file/d/1mIzWeEQ_W93nDzHXN706Ii0r2VcPYTRf/view?usp=share_link" target="_blank" className="text-center w-full h-full p-1">Resume</a>
+              <a aria-label="Download resume" href="https://drive.google.com/file/d/1XuVbwCyC0X99F_6onomKwDRQNhacAUhx/view?usp=sharing" target="_blank" className="text-center w-full h-full p-1">Resume</a>
             </li>
           </ul>
         </motion.div>}
