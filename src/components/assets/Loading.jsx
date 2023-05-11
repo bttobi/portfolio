@@ -1,5 +1,5 @@
-import React from 'react';
-import { TailSpin } from 'react-loading-icons';
+import React from "react";
+import { TailSpin } from "react-loading-icons";
 
 const Loading = () => {
   return (
@@ -7,7 +7,7 @@ const Loading = () => {
       <TailSpin />
       <span>Loading...</span>
     </div>
-  )
-}
+  );
+};
 
-export default Loading
+export default Loading;

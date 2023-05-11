@@ -1,5 +1,5 @@
-import CatDispScene from '../scenes/CatDispScene';
-import QuestionBlockScene from '../scenes/QuestionBlockScene';
+import CatDispScene from "../scenes/CatDispScene";
+import QuestionBlockScene from "../scenes/QuestionBlockScene";
 
 export const data = [
   {
@@ -9,7 +9,14 @@ export const data = [
     desc: "Page made for cat lovers. You can create an account, search for cat breeds and funny gifs as well as add them to favourites!",
     demo_url: "https://bttobi.github.io/cat_page/",
     github_url: "https://github.com/bttobi/cat_page",
-    tech: ["React.js", "Firebase", "React Query", "Tailwind CSS", "daisyUI", "React Router"]
+    tech: [
+      "React",
+      "Firebase",
+      "React Query",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Router",
+    ],
   },
   {
     id: "project-2",
@@ -18,7 +25,7 @@ export const data = [
     desc: "Coming Soon",
     demo_url: "#demo",
     github_url: "#github",
-    tech: []
+    tech: [],
   },
   {
     id: "project-3",
@@ -27,6 +34,6 @@ export const data = [
     desc: "Coming Soon",
     demo_url: "#demo",
     github_url: "#github",
-    tech: []
-  }
+    tech: [],
+  },
 ];

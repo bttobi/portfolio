@@ -1,7 +1,8 @@
 export const data = [
   {
-    name: "React.js",
-    img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+    name: "React",
+    img_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
     img_width: "48",
     img_height: "48",
   },
@@ -19,13 +20,15 @@ export const data = [
   },
   {
     name: "Tailwind CSS",
-    img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333",
+    img_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333",
     img_width: "48",
     img_height: "48",
   },
   {
     name: "daisyUI",
-    img_url: "https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg",
+    img_url:
+      "https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg",
     img_width: "72",
     img_height: "72",
   },
@@ -34,5 +37,12 @@ export const data = [
     img_url: "https://reactrouter.com/_brand/react-router-mark-color.png",
     img_width: "48",
     img_height: "48",
-  }
-]
+  },
+  {
+    name: "Framer Motion",
+    img_url:
+      "https://pagepro.co/blog/wp-content/uploads/2020/03/framer-motion.png",
+    img_width: "48",
+    img_height: "48",
+  },
+];
