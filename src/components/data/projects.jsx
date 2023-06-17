@@ -1,5 +1,6 @@
 import CatDispScene from "../scenes/CatDispScene";
 import QuestionBlockScene from "../scenes/QuestionBlockScene";
+import TorusKnotScene from "../scenes/TorusKnotScene";
 
 export const data = [
   {
@@ -16,16 +17,17 @@ export const data = [
       "Tailwind CSS",
       "Framer Motion",
       "React Router",
+      "daisyUI",
     ],
   },
   {
     id: "project-2",
-    name: "More Coming Soon",
-    scene: <QuestionBlockScene />,
-    desc: "Coming Soon",
-    demo_url: "#demo",
-    github_url: "#github",
-    tech: [],
+    name: "Toon Shader Sandbox",
+    scene: <TorusKnotScene />,
+    desc: "Project where you can manipulate different parameters of the Toon Shader and play with it!",
+    demo_url: "https://bttobi.github.io/toon_shader_project/",
+    github_url: "https://github.com/bttobi/toon_shader_project",
+    tech: ["React", "Tailwind CSS", "daisyUI", "React Three Fiber"],
   },
   {
     id: "project-3",
