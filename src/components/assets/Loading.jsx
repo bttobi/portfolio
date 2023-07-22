@@ -3,7 +3,7 @@ import { TailSpin } from "react-loading-icons";
 
 const Loading = () => {
   return (
-    <div className="loading w-full h-full flex flex-col align-center items-center justify-center">
+    <div className="align-center loading flex h-full w-full flex-col items-center justify-center">
       <TailSpin />
       <span>Loading...</span>
     </div>

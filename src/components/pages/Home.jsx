@@ -7,7 +7,7 @@ const Home = () => {
     <section
       id="home"
       style={{ minHeight: "100vh", width: "100%" }}
-      className="home article flex flex-col lg:flex-row justify-center align-center content-center items-center"
+      className="home article align-center flex flex-col content-center items-center justify-center lg:flex-row"
     >
       <About />
       <HelloScene />

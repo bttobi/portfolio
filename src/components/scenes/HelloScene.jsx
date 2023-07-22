@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { OrbitControls, Preload, BakeShadows } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import HelloText from "./models_jsx/HelloText";
@@ -6,7 +6,7 @@ import Loading from "../assets/Loading";
 
 const HelloScene = () => {
   return (
-    <div className="lg:order-2 order-1 w-full lg:w-1/2 lg:h-96 md:h-72 h-48 mt-16 lg:m-0 cursor-pointer">
+    <div className="order-1 mt-16 h-48 w-full cursor-pointer md:h-72 lg:order-2 lg:m-0 lg:h-96 lg:w-1/2">
       <Suspense fallback={<Loading />}>
         <Canvas>
           <ambientLight intensity={0.5} />

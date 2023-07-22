@@ -11,29 +11,29 @@ const ProjectCardClicked = ({ projectInfo }) => {
           <button aria-label="Close modal">
             <label
               htmlFor={projectInfo.id}
-              className="close-btn cursor-pointer rounded-lg p-2 absolute right-3 top-3 bg-red-500 "
+              className="close-btn absolute right-3 top-3 cursor-pointer rounded-lg bg-red-500 p-2"
             >
               <GrClose size={20} />
             </label>
           </button>
-          <p className="font-bold text-xl text-center">{projectInfo.name}</p>
+          <p className="text-center text-xl font-bold">{projectInfo.name}</p>
           <p className="p-4 text-center">{projectInfo.desc}</p>
           {projectInfo.tech.length != 0 && (
-            <ul className="mt-4 flex flex-row flex-wrap align-center items-baseline justify-around text-black bg-white py-4 shadow-blue-dark">
+            <ul className="align-center mt-4 flex flex-row flex-wrap items-baseline justify-around bg-white py-4 text-black shadow-blue-dark">
               {projectInfo.tech.map((techName, index) => (
                 <TechIcon name={techName} key={index} />
               ))}
             </ul>
           )}
           {projectInfo.name != "More Coming Soon" && ( //to be implemented
-            <div className="button-wrapper flex flex-col align-center items-center justify-around font-main mx-8">
+            <div className="button-wrapper align-center mx-8 flex flex-col items-center justify-around font-main">
               <button
-                className="mt-4 mb-0 flex justify-center items-center align-center content-center"
+                className="align-center mt-4 mb-0 flex content-center items-center justify-center"
                 aria-label="Open project demo"
               >
                 <a
                   href={projectInfo.demo_url}
-                  className="modal-action btn border-none font-bold p-4 m-0 rounded-lg h-full text-white text-center flex justify-center lg:text-lg text-sm"
+                  className="modal-action btn m-0 flex h-full justify-center rounded-lg border-none p-4 text-center text-sm font-bold text-white lg:text-lg"
                   target="_blank"
                 >
                   Project Demo

@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Bananya(props) {
   const { nodes, materials } = useGLTF(
-    "/models/bananya/bananya_birbo-transformed.glb"
+    "/models/bananya/bananya_birbo-transformed.glb",
   );
 
   const bananyaDispRef = useRef();

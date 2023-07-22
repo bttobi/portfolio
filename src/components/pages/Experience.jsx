@@ -7,14 +7,14 @@ const Projects = () => {
 
   return (
     <section
-      id="projects"
+      id="experience"
       style={{ minHeight: "100vh", width: "100%" }}
-      className="article flex flex-col mt-16 pb-16 shadow-top-bottom shadow-black font-article"
+      className="article mt-16 flex flex-col pb-16 font-article shadow-top-bottom shadow-black"
     >
-      <p className="font-bold text-2xl pt-24  mb-4 lg:pt-28 text-center">
+      <p className="mb-4 pt-24 text-center text-2xl font-bold lg:pt-28">
         Selected projects:
       </p>
-      <p className="text-xl text-center">
+      <p className="text-center text-xl">
         Visit my{" "}
         <a
           className="github-link underline"
@@ -25,8 +25,8 @@ const Projects = () => {
         </a>{" "}
         for more
       </p>
-      <p className="text-xl text-center">Click card to see details</p>
-      <div className="projects-wrapper w-full flex flex-grow md:flex-row flex-col items-center justify-center mt-4">
+      <p className="text-center text-xl">Click card to see details</p>
+      <div className="projects-wrapper mt-4 flex w-full flex-grow flex-col items-center justify-center md:flex-row">
         {projects.map((el) => (
           <ProjectCard projectInfo={el} key={el.id} />
         ))}

@@ -1,7 +1,7 @@
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
-import Projects from "./components/pages/Projects";
+import Experience from "./components/pages/Experience";
 import Contact from "./components/pages/Contact";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
@@ -23,7 +23,7 @@ function App() {
       >
         <Navbar />
         <Home />
-        <Projects />
+        <Experience />
         <Contact />
       </motion.div>
     </AnimatePresence>

@@ -7,7 +7,7 @@ const TechIcon = ({ name }) => {
 
   return (
     (chosenTech != undefined || chosenTech != null) && (
-      <li className="mt-4 flex flex-col items-center w-1/3">
+      <li className="mt-4 flex w-1/3 flex-col items-center">
         <img
           src={chosenTech.img_url}
           width={chosenTech.img_width}

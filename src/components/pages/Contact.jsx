@@ -18,19 +18,19 @@ const Contact = () => {
       <section
         id="contact"
         style={{ minHeight: "100vh", width: "100%" }}
-        className="article flex flex-col items-center align-center"
+        className="article align-center flex flex-col items-center"
       >
         <div
-          className="social-icons-wrapper w-full flex flex-col items-center justify-center content-center"
+          className="social-icons-wrapper flex w-full flex-col content-center items-center justify-center"
           style={{ minHeight: "90vh" }}
         >
-          <p className="text-2xl font-bold w-full text-center pt-24 font-article">
-            Contact me:{" "}
+          <p className="w-full pt-24 text-center font-article text-2xl font-bold">
+            Contact me via:
           </p>
-          <ul className="flex lg:flex-row lg:w-full w-min mt-8 lg:px-16 px-0 mx-8 flex-col justify-center align-center items-center content-stretch gap-8 h-min">
-            <li className="border-none lg:w-0 w-full menu-item font-bold rounded-lg text-white h-min p-0 shadow-md shadow-black flex justify-center flex-grow basis-0">
+          <ul className="align-center content-stretch mx-8 mt-8 flex h-min w-min flex-col items-center justify-center gap-8 px-0 lg:w-full lg:flex-row lg:px-16">
+            <li className="menu-item flex h-min w-full flex-grow basis-0 justify-center rounded-lg border-none p-0 font-bold text-white shadow-md shadow-black lg:w-0">
               <button
-                className="flex justify-center align-center items-center p-3 px-4 h-full w-full"
+                className="align-center flex h-full w-full items-center justify-center p-3 px-4"
                 aria-label="Copy email address"
                 onClick={copyToClipboard}
               >
@@ -40,13 +40,13 @@ const Contact = () => {
                 </span>
               </button>
             </li>
-            <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
+            <li className="menu-item align-center flex h-min w-full flex-grow basis-0 items-center justify-center rounded-lg border-none p-0 font-bold text-white shadow-md shadow-black lg:w-0">
               <button
-                className="flex justify-center align-center items-center h-full w-full"
+                className="align-center flex h-full w-full items-center justify-center"
                 aria-label="Go to LinkedIn"
               >
                 <a
-                  className="flex justify-center align-center items-center w-full h-full p-3 px-4"
+                  className="align-center flex h-full w-full items-center justify-center p-3 px-4"
                   href="https://www.linkedin.com/in/bartosz-tobiński-525864246/"
                   target="_blank"
                 >
@@ -59,13 +59,13 @@ const Contact = () => {
                 </a>
               </button>
             </li>
-            <li className="flex lg:w-0 w-full menu-item justify-center align-center items-center p-0 border-none font-bold rounded-lg text-white h-min shadow-md shadow-black flex-grow basis-0">
+            <li className="menu-item align-center flex h-min w-full flex-grow basis-0 items-center justify-center rounded-lg border-none p-0 font-bold text-white shadow-md shadow-black lg:w-0">
               <button
-                className="flex justify-center align-center items-center w-full h-full"
+                className="align-center flex h-full w-full items-center justify-center"
                 aria-label="Go to Github"
               >
                 <a
-                  className="flex justify-center align-center items-center w-full h-full p-3 px-4"
+                  className="align-center flex h-full w-full items-center justify-center p-3 px-4"
                   href="https://github.com/bttobi"
                   target="_blank"
                 >
@@ -80,23 +80,23 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <footer className="footer footer-center text-base-content rounded self-end my-4 w-full h-min">
-          Copyright © 2023 - All right reserved by Bartosz Tobiński
+        <footer className="footer footer-center my-4 h-min w-full self-end rounded text-base-content">
+          Copyright © 2024 - All right reserved by Bartosz Tobiński
         </footer>
       </section>
       <AnimatePresence>
         {isVisible && (
           <motion.div
-            className="w-full flex justify-center fixed bottom-32 z-30"
+            className="fixed bottom-32 z-30 flex w-full justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="alert bg-blue-dark shadow-lg w-auto">
+            <div className="alert w-auto bg-blue-dark shadow-lg">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="stroke-current flex-shrink-0 h-6 w-6 text-white"
+                  className="h-6 w-6 flex-shrink-0 stroke-current text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -107,7 +107,7 @@ const Contact = () => {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span className="text-white font-primary">
+                <span className="font-primary text-white">
                   Copied to clipboard!
                 </span>
               </div>

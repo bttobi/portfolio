@@ -7,10 +7,10 @@ const ProjectCard = ({ projectInfo }) => {
       <label
         aria-label="Open project details"
         htmlFor={projectInfo.id}
-        className="btn shadow-lg hover:scale-105 shadow-black border-none md:w-1/4 w-1/2 mt-10 lg:w-1/5 h-48 lg:h-96 md:h-48 sm:h-36 flex flex-col p-0 mx-4 lg:mx-8 xl:mx-16 justify-center bg-gradient-to-r from-cyan-600 to-cyan-400 text-white z-10"
+        className="btn z-10 mx-4 mt-10 flex h-48 w-1/2 flex-col justify-center border-none bg-gradient-to-r from-cyan-600 to-cyan-400 p-0 text-white shadow-lg shadow-black hover:scale-105 sm:h-36 md:h-48 md:w-1/4 lg:mx-8 lg:h-96 lg:w-1/5 xl:mx-16"
       >
         {projectInfo.scene}
-        <p className="absolute lg:w-min z-20 rounded-lg bg-blue-darker bg-opacity-60 lg:text-xl text-sm p-2 break-words">
+        <p className="absolute z-20 break-words rounded-lg bg-blue-darker bg-opacity-60 p-2 text-sm lg:w-min lg:text-xl">
           {projectInfo.name}
         </p>
       </label>
