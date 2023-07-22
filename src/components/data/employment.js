@@ -10,7 +10,7 @@ export const data = [
   },
   {
     company: "SymphonyAI",
-    position: "SOFTWARE ENGINEER",
+    position: "FRONT-END DEVELOPER",
     date: "07.2023 - currently",
     logo_url: "https://i.imgur.com/N8wG6p3.png",
     img_width: "128",
