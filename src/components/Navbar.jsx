@@ -59,7 +59,7 @@ const Navbar = () => {
         </button>
         <button aria-label="Download resume">
           <a
-            href="https://drive.google.com/file/d/1vkrtW7mZNn4p3Q_jzyy75TIjZyXXq21z/view?usp=sharing"
+            href="https://drive.google.com/file/d/1bQoaJ2hbbfTNXjCBzyOezza2QwNOnPV3/view?usp=sharing"
             target="_blank"
             download
             className="nav-button contacts-link mr-4 hidden rounded-lg p-1 lg:block"
@@ -118,7 +118,7 @@ const Navbar = () => {
               <li className="menu-item flex h-full w-full rounded-lg bg-slate-600">
                 <a
                   aria-label="Download resume"
-                  href="https://drive.google.com/file/d/1vkrtW7mZNn4p3Q_jzyy75TIjZyXXq21z/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bQoaJ2hbbfTNXjCBzyOezza2QwNOnPV3/view?usp=sharing"
                   target="_blank"
                   className="h-full w-full p-1 text-center"
                 >
