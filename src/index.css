@@ -15,9 +15,10 @@ body,
   padding: 0;
   scroll-behavior: smooth;
   color: white;
-  font-family: 'Red Hat Display', 'sans-serif';
+  font-family: "Red Hat Display", "sans-serif";
   width: 100vw;
   height: 100vh;
+  background-color: #daf8ff;
 }
 
 #app {

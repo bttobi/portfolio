@@ -1,6 +1,6 @@
-import { NavLink } from './';
-import { Logo } from '../logo';
-import { PageType } from '../../pages';
+import { NavLink } from "./";
+import { Logo } from "../logo";
+import { PageType } from "../../pages";
 
 interface NavbarProps {
   items: PageType[];
@@ -8,9 +8,9 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ items }) => {
   return (
-    <nav className="w-full h-16 bg-secondary flex justify-center align-center gap-10 fixed top-0">
+    <nav className="align-center fixed top-0 flex h-16 w-full justify-center gap-10 bg-secondary">
       <Logo />
-      {items.map(el => (
+      {items.map((el) => (
         <NavLink key={el.displayName} {...el} />
       ))}
     </nav>
